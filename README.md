@@ -4,10 +4,10 @@
 How to run the Api endpoint container
 
 
-1.] git clone https://github.com/misua/gmay_eggs.git
+1.] git clone https://github.com/misua/api.git
 
 
-2.] cd to gmay_eggs and do a docker/podman build for the included Dockerfile (you can use docker,i used podman,they function the same)
+2.] cd to _api_ dir, and do a docker/podman build for the included Dockerfile (you can use docker,i used podman,they function the same)
 
 
    + podman build -t myapi . --no-cache
