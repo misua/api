@@ -1,11 +1,11 @@
 # gmay_eggs
 
 
-How to run code
-
+How to run the Api endpoint container
 
 
 1.] git clone https://github.com/misua/gmay_eggs.git
+
 
 2.] cd to gmay_eggs and do a docker/podman build for the included Dockerfile (you can use docker,i used podman,they function the same)
    a.) podman build -t myapi . --no-cache
@@ -19,12 +19,12 @@ How to run code
    - Dockerfileelastic is the Dockerfile for kibana and elasticsearch.(just rename it to Dockerfile if you need to build and run it)
 
      
-  
-
 3.] Access the api at http://127.0.0.1:5000/api/resource - by default you are allowed to request 2 times in 60 seconds
 
 4.] To Change the rate limit call http://127.0.0.1/api/limit by using curl(in cli) or postman e.g 
     curl -X POST -H "Content-Type: application/json" -d '{"limit": 10, "window": 120}' http://localhost:5000/api/limit
 
     this changes the rate limit to be 10 requests on a 2 minutes window.
+
+[basic flow] (https://raw.githubusercontent.com/misua/gmay_eggs/main/accelbyte.png)https://raw.githubusercontent.com/misua/gmay_eggs/main/accelbyte.png)
    
