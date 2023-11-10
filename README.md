@@ -22,6 +22,8 @@ How to run the Api endpoint container
 3.] Access the api at http://127.0.0.1:5000/api/resource - by default you are allowed to request 2 times in 60 seconds
 
 4.] To Change the rate limit call http://127.0.0.1/api/limit by using curl(in cli) or postman e.g 
+
+
     curl -X POST -H "Content-Type: application/json" -d '{"limit": 10, "window": 120}' http://localhost:5000/api/limit
 
     this changes the rate limit to be 10 requests on a 2 minutes window.
