@@ -1,0 +1,18 @@
+filebeat.inputs:
+- type: log
+  paths:
+    - /flask_app.log
+
+output.elasticsearch:
+  hosts: ["elasticsearch_ip:9200"]
+  #username: ""
+  #password: ""
+
+processors:
+- add_host_metadata:
+
+setup.kibana:
+  host: "kibana_ip:5601"
+  protocol: "http"
+  username: ""
+  password: ""
