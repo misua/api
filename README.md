@@ -1,4 +1,4 @@
-### accelbyte api exercise
+### Api exercise
 
 
 How to run the Api endpoint container
