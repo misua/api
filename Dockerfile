@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y wget && \
     pipenv install -r requirements.txt
 
 COPY filebeat.yml /etc/filebeat/filebeat.yml
+RUN  chmod go-w /etc/filebeat/filebeat.yml
 
 ENV FLASK_APP=app.py
 
