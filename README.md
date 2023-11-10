@@ -13,7 +13,7 @@ How to run the Api endpoint container
    + podman build -t myapi . --no-cache
    + podman run -p 5000:5000 myapi
 
-   ###### Additional info & facts with the api endpoint
+#### Additional info & facts with the api endpoint
    - i am just using a Dict to store the counters, and not a datastore like redis,memcache.
    - i did NOT use ratelimiter library, i was considering Flask-limiter as its easier to integrate with redis if the needs would come up.
    - filebeat is installed on the same container where the rest python app is, it would recieve the flask_app.log(as configured in filebeat.yml) and
