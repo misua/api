@@ -1,1 +1,0 @@
-# gmay_eggs
