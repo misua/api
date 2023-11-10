@@ -26,5 +26,5 @@ How to run the Api endpoint container
 
     this changes the rate limit to be 10 requests on a 2 minutes window.
 
-[basic flow] (https://raw.githubusercontent.com/misua/gmay_eggs/main/accelbyte.png)https://raw.githubusercontent.com/misua/gmay_eggs/main/accelbyte.png)
+![Basic flow] (https://raw.githubusercontent.com/misua/gmay_eggs/main/accelbyte.png)https://raw.githubusercontent.com/misua/gmay_eggs/main/accelbyte.png)
    
