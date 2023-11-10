@@ -8,8 +8,10 @@ How to run the Api endpoint container
 
 
 2.] cd to gmay_eggs and do a docker/podman build for the included Dockerfile (you can use docker,i used podman,they function the same)
-   a.) podman build -t myapi . --no-cache
-   b.) podman run -p 5000:5000 myapi
+
+
+   - podman build -t myapi . --no-cache
+   - podman run -p 5000:5000 myapi
 
    Additional info & facts with the api endpoint
    - i am just using a Dict to store the counters, and not a datastore like redis,memcache.
