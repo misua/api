@@ -1,7 +1,22 @@
 from flask import Flask, jsonify, request
 from datetime import datetime, timedelta
+import logging
+from logging.handlers import RotatingFileHandler
+
 
 app = Flask(__name__)
+
+
+#Flask logging
+handler = RotatingFileHandler('flask_app.log', maxBytes=10000, backupCount=1)
+handler.setLevel(logging.INFO)  # Set the desired log level (e.g., INFO, DEBUG, etc.)
+
+# Create a formatter that includes a timestamp
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+
+
+app.logger.addHandler(handler)
 
 # Dictionary to store the last request timestamp for each IP address
 request_timestamps = {}
@@ -42,6 +57,7 @@ def get_resource():
     if not is_rate_limited(client_ip, limit=limit, window=window):
         return jsonify(data="This is a rate-limited resource.")
     else:
+        app.logger.critical('you have reached a limit')
         return jsonify(error="Rate limit exceeded."), 429
 
 
@@ -58,7 +74,7 @@ def change_limit():
     if new_limit is not None and new_window is not None:
         request_timestamps[client_ip]['limit'] = new_limit
         request_timestamps[client_ip]['window'] = new_window
-        request_timestamps[client_ip]['timestamps'] = []
+        request_timestamps[client_ip]['timestamps'] = []   
         return jsonify(data="Rate limit has been changed.")
     else:
         return jsonify(error="Invalid request body."), 400
