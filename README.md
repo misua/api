@@ -1,13 +1,13 @@
 ## Api exercise
 
 
-How to run the Api endpoint container
+```How to run the Api endpoint container```
 
 
 1.] git clone https://github.com/misua/api.git
 
 
-2.] cd to _api_ dir, and do a docker/podman-compose up -d 
+2.] cd to _api_ dir, and do a `podman-compose up -d`  you can use docker if you wish
 
      
 3.] Access the api at http://127.0.0.1:5000/api/resource - by default you are allowed to request 2 times in 60 seconds
