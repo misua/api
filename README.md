@@ -18,7 +18,12 @@
 <br>
 `it should run the web api app(with filebeat), separate container for both kibana,elasticsearch. filebeat had a basic
 filebeat.yml, but in no way tested to send logs to kibana. or configured other services to recieve.`
-
+<br>
+<br>
+<br>
+<br>
+`To test the api`
+<br>
      
 3.] Access the api at http://127.0.0.1:5000/api/resource - by default you are allowed to request 2 times in 60 seconds
 
