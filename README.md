@@ -10,7 +10,7 @@
 + download unzip the api.zip
 ``` 
 
-2.] cd to _api_ dir, and do a `podman-compose up -d`  *you can use docker if you wish* 
+2.] cd to _api_ dir, and do a `podman-compose up -d`  *you can use docker-compose up if you wish* 
 <br>
 <br>
 `The expected output is `
