@@ -10,7 +10,7 @@
 + download unzip the api.zip
 ``` 
 
-2.] cd to _api_ dir, and do a `podman-compose up -d`  you can use docker if you wish
+2.] cd to _api_ dir, and do a `podman-compose up -d`  *you can use docker if you wish*
 
      
 3.] Access the api at http://127.0.0.1:5000/api/resource - by default you are allowed to request 2 times in 60 seconds
