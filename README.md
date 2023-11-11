@@ -10,7 +10,10 @@
 + download unzip the api.zip
 ``` 
 
-2.] cd to _api_ dir, and do a `podman-compose up -d`  *you can use docker if you wish* the expected output is 
+2.] cd to _api_ dir, and do a `podman-compose up -d`  *you can use docker if you wish* 
+<br>
+<br>
+`The expected output is `
 it should run the web api app(with filebeat), separate container for both kibana,elasticsearch. filebeat had a basic
 filebeat.yml, but in no way tested to send logs to kibana. or configured other services to recieve. 
 
