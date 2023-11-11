@@ -1,4 +1,4 @@
-### Api exercise
+## Api exercise
 
 
 How to run the Api endpoint container
@@ -20,7 +20,7 @@ How to run the Api endpoint container
    > this changes the rate limit to be 10 requests on a 2 minutes window.
 
 
-#### Additional info 
+** Additional info **
 
    - i am just using a Dict to store the counters, and not a datastore like redis,memcache.
    - i did NOT use ratelimiter library, i was considering Flask-limiter as its easier to integrate with redis if the needs would come up.
