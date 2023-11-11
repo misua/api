@@ -7,11 +7,7 @@ How to run the Api endpoint container
 1.] git clone https://github.com/misua/api.git
 
 
-2.] cd to _api_ dir, and do a docker/podman build for the included Dockerfile (you can use docker,i used podman,they function the same)
-
-
-   + podman build -t myapi . --no-cache
-   + podman run -p 5000:5000 myapi
+2.] cd to _api_ dir, and do a docker/podman-compose up -d 
 
 
 ### Additional info & facts with the api endpoint
