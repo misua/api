@@ -1,7 +1,7 @@
 ## Api exercise
 
 
-```diff +How to run the Api endpoint container```
+```diff How to run the Api endpoint container```
 <br>
 
 1.] git clone https://github.com/misua/api.git
