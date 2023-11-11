@@ -1,11 +1,13 @@
 ## Api exercise
 
 
-```diff How to run the Api endpoint container```
+```How to run the Api endpoint container```
+<br>
 <br>
 
-1.] git clone https://github.com/misua/api.git
-
+``` diff
+- 1.] git clone https://github.com/misua/api.git
++ download unzip the api.zip 
 
 2.] cd to _api_ dir, and do a `podman-compose up -d`  you can use docker if you wish
 
