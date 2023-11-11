@@ -27,6 +27,7 @@ filebeat.yml, but in no way tested to send logs to kibana. or configured other s
 3.] Access the api at http://127.0.0.1:5000/api/resource - by default you are allowed to request 2 times in 60 seconds
 <br>
 `To change rate limit to the api`
+<br>
 4.] To Change the rate limit call http://127.0.0.1/api/limit by using curl(in cli) or postman e.g 
 
 
